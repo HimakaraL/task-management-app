@@ -1,7 +1,6 @@
 package com.example.taskapp
 
-data class Tasks (
+data class Task (
     var name: String,
     var isDone: Boolean = false
-
 )

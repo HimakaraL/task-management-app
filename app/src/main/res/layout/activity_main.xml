@@ -10,11 +10,11 @@
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/rVTodoItems"/>
+        android:id="@+id/rVTaskItems"/>
 
     <EditText
         android:hint="Task Name"
-        android:id="@+id/eTTodoName"
+        android:id="@+id/eTTaskName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
@@ -22,7 +22,7 @@
         />
     
     <Button
-        android:id="@+id/bAddTodo"
+        android:id="@+id/bAddTask"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="+"
@@ -30,7 +30,7 @@
         />
 
     <Button
-        android:id="@+id/bDddTodo"
+        android:id="@+id/bDddTask"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Delete"
