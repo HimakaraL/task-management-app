@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f0f0f0"
+    android:background="#333333"
     tools:context=".MainActivity">
 
     <androidx.recyclerview.widget.RecyclerView
@@ -13,7 +13,7 @@
         android:layout_height="match_parent"
         android:layout_above="@id/llAddTask"
         android:padding="16dp"
-        android:background="#ffffff" />
+        android:background="#333333" />
 
     <LinearLayout
         android:id="@+id/llAddTask"
@@ -22,16 +22,23 @@
         android:layout_alignParentBottom="true"
         android:orientation="horizontal"
         android:padding="16dp"
-        android:background="#ffffff">
+        android:background="#333333">
 
         <EditText
             android:id="@+id/eTTaskName"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:fontFamily="@font/font2"
             android:hint="Enter New Task"
-            android:textColor="#000000"
-            android:textSize="16sp" />
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:background="@drawable/edittext_background"/>
 
         <Button
             android:id="@+id/bAddTask"
@@ -40,6 +47,7 @@
             android:layout_marginStart="8dp"
             android:background="@drawable/rounded_button_green"
             android:text="+"
+            android:fontFamily="@font/font2"
             android:textColor="#ffffff" />
     </LinearLayout>
 
@@ -53,5 +61,6 @@
         android:layout_marginBottom="16dp"
         android:background="@drawable/rounded_button_red"
         android:text="Delete"
+        android:fontFamily="@font/font2"
         android:textColor="#ffffff" />
 </RelativeLayout>
