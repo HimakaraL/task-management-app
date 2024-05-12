@@ -38,10 +38,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:background="@color/green"
-            android:backgroundTint="@color/green"
+            android:background="@drawable/rounded_button_green"
             android:text="+"
-            android:textColor="@color/black" />
+            android:textColor="#ffffff" />
     </LinearLayout>
 
     <Button
@@ -52,9 +51,7 @@
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:background="@color/light_red"
-        android:backgroundTint="@color/light_red"
+        android:background="@drawable/rounded_button_red"
         android:text="Delete"
-        android:textColor="@color/black" />
-
+        android:textColor="#ffffff" />
 </RelativeLayout>
