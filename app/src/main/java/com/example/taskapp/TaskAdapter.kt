@@ -34,7 +34,8 @@ class TaskAdapter(val tasks: MutableList<Task>) :
         tasks.add(task)
         notifyItemInserted(tasks.size - 1)
     }
-
+    
+    //Cut the Done Tasks
     private fun changeValues(todoName: TextView, isDone: Boolean) {
         if (isDone) {
             todoName.paintFlags = todoName.paintFlags or Paint.STRIKE_THRU_TEXT_FLAG
