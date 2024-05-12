@@ -8,9 +8,12 @@
     tools:context=".MainActivity">
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rVTaskItems"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/rVTaskItems"/>
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="1" />
 
     <EditText
         android:hint="Task Name"
